@@ -1,0 +1,9 @@
+{
+    "name": "math-question-bank",
+    "version": "1.0.0",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^[_{{{CITATION{{{_1{](https://github.com/Pardis-K/Doctor-Appointment/tree/5da8f6d7847dc7b98f9bbdd1ba83a09a1c39c8ef/views%2Flayout%2Fdoctor.blade.php)[_{{{CITATION{{{_2{](https://github.com/nojan1/gloomhaven-monster-health-tracker/tree/b6f96c8d5f4c0fa905fb360358e926c53135ac99/src%2Fcomponents%2Feffect.js)

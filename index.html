@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بانک سؤالات ریاضی خوارزمی</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>خوش آمدید</h2>
+            <p>این سایت نمونه بانک سوالات خوارزمی هست</p>
+        </div>
+    </div>
+    <div class="container">
+        <div id="date-time" class="date-time"></div>
+        <div class="tabs">
+            <button class="tab-button active" onclick="switchTab('home')">خانه</button>
+            <button class="tab-button" onclick="switchTab('questions')">سوالات</button>
+            <button class="tab-button" onclick="switchTab('login')">ورود</button>
+        </div>
+        <div id="home" class="tab-content active">
+            <h1>خوش آمدید</h1>
+            <p>این سایت نمونه بانک سوالات خوارزمی هست</p>
+        </div>
+        <div id="questions" class="tab-content">
+            <h1>بانک سوالات</h1>
+            <div class="categories">
+                <div class="category" onclick="openCategory('محاسبات اعداد گویا')">محاسبات اعداد گویا</div>
+                <div class="category" onclick="openCategory('معادله')">معادله</div>
+                <div class="category" onclick="openCategory('تجزیه عبارت‌های جبری')">تجزیه عبارت‌های جبری</div>
+                <div class="category" onclick="openCategory('رابطه فیثاغورس')">رابطه فیثاغورس</div>
+                <div class="category" onclick="openCategory('توان')">توان</div>
+                <div class="category" onclick="openCategory('جذر')">جذر</div>
+                <div class="category" onclick="openCategory('زاویه‌های مرکزی و محاطی')">زاویه‌های مرکزی و محاطی</div>
+                <div class="category" onclick="openCategory('هم‌نهشتی مثلث‌ها')">هم‌نهشتی مثلث‌ها</div>
+                <div class="category" onclick="openCategory('احتمال')">احتمال</div>
+                <div class="category" onclick="openCategory('بردار و مختصات')">بردار و مختصات</div>
+            </div>
+        </div>
+        <div id="login" class="tab-content">
+            <h1>ورود</h1>
+            <form id="loginForm">
+                <label for="username">نام کاربری:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">رمز عبور:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">ورود</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <button class="tab-button active" onclick="switchTab('home')">خانه</button>
+        <button class="tab-button" onclick="switchTab('questions')">سوالات</button>
+        <button class="tab-button" onclick="switchTab('login')">ورود</button>
+    </footer>
+</body>
+
+</html>
